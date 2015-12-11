@@ -1,3 +1,6 @@
+# TODO:
+Make specs pass
+
 # basecrm-ruby
 
 BaseCRM Official API V2 library client for ruby
@@ -317,6 +320,18 @@ Actions:
 * Retrieve all users - `client.users.all`
 * Retrieve a single user - `client.users.find`
 * Retrieve an authenticating user - `client.users.self`
+
+### Product
+
+```ruby
+client = BaseCRM::Client.new(access_token: "<YOUR_PERSONAL_ACCESS_TOKEN>")
+client.products # => BaseCRM::ProductsService
+```
+
+Actions:
+* Retrieve all deals - `client.products.all`
+* Create a deal - `client.products.create`
+* Retrieve a single deal - `client.products.find`
 
 
 ## License
